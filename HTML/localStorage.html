@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Local Storage</title>
+</head>
+<body>
+    <script type="text/javascript" src="storage.js"></script>
+    <form method="post" id="Form" name="Form">
+        <span class="span1">
+            <h4>Sign Up</h4>
+        </span>
+
+        <div class="div1" data-validate="Type first name">
+            <input id="first-name" type="text" placeholder="First name" required>
+        </div>
+
+        <div class="div2" data-validate="Type last name">
+            <input id="last-name" type="text" placeholder="Last name" required>
+        </div>
+    
+        <div class="div3" data-validate="Type email address">
+            <input id="email" class="email" type="text" name="email" placeholder="Email Id" required>
+        </div>
+                        
+        <div class="div4" data-validate="Type username">
+            <input id="username" class="username" type="text" name="username" placeholder="Username" required>
+        </div>
+        <br>
+        <div class="div5">
+            <button type="button" onclick="validateForm();"  name= "signup" value="Sign Up" >
+                Sign Up
+            </button>
+        </div>
+<br><br>
+        <h2> List of all the registered users </h2>
+        <div id="stored">
+            
+        </div>
+    </form>
+</body>
+</html>
