@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Input Types</title>
+</head>
+<body>
+    <form action="#" method="GET">
+        <!-- TEXT -->
+        <h4> 
+            Input Type: Text ->      
+            <input placeholder="Enter Some Text" type="text" id="text" />
+        </h4>
+        <br>
+        <!-- SEARCH BOX -->
+        <h4> 
+            Input Type: Search Box ->      
+                <input placeholder="Search something" type="search" id="search" />
+            </h4>
+        <br>
+        <!-- DATE -->
+        <h4> 
+            Input Type: Date ->      
+            <input type="date" id="date" />
+        </h4>
+        <br>
+
+        <!-- EMAIL -->
+        <h4> 
+            Input Type: Email ->      
+            <input placeholder="Enter an Email Id" type="email" id="email" multiple autofocus/>
+            </h4>
+        <br>
+
+        <!-- FILE -->
+        <h4> 
+            Input Type: File ->      
+            <input type="file" id="file" multiple/>
+        </h4>
+        <br>
+
+        <!-- IMAGE -->
+        <h4> 
+            Input Type: Image ->      
+            <input width="220" height="300" alt="Some Image" src="img.jpg" type="image" id="img" />
+        </h4>
+        <br>
+
+        <!-- NUMBER -->
+        <h4> 
+                Input Type: Number ->      
+                <input  type="number" id="number" min = 1 max = 60 value = "10"/>
+        </h4><br>
+
+		<!-- URL -->
+		<h4>
+            Input Type: URL -> <br>
+			<input type = "url" placeholder="Enter URL" id = "url" required>
+		</h4>
+        <br>
+        
+        <!-- RADIO BUTTON -->
+        <h4> 
+            Input Type: Radio Button ->   <br>   
+            <input type="radio" name="country" value = "India"> India <br>
+            <input type="radio" name="country" value = "United States"> United States <br>
+            <input type="radio" name="country" value = "China"> China <br>
+        </h4>
+        <br>
+
+        <!-- RANGE -->
+        <h4> 
+            Input Type: Range ->      
+            0 <input type="range" id="range" min="0" max="20" /> 20
+        </h4>
+        <br>
+
+        <!-- PATTERN -->
+		<h4>
+                Input Type: Pattern -> 
+                <input type = "text" id = "pattern" pattern = "[0-9]{5}" placeholder = "Enter Pincode">
+        </h4>
+		
+		<!-- COLOR -->
+		<h4>
+            Input Type: Color ->
+			<input type = "color">
+		</h4>
+		<br>
+		
+		<!-- BUTTON -->
+		<input type = "button" id = "button" value = "Press here" onclick="alert('*** This is input type button. onclick() is invoked on button press ***')">
+		<br>
+        
+        <!-- SUBMIT AND RESET -->
+        <input type = "submit" id="submit" />
+        <input type="reset" id="reset" />
+        <br>         
+    </form>
+</body>
+</html>
