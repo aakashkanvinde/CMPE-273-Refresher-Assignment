@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Events</title>
+</head>
+<script type="text/javascript">
+function testScore(){
+    var home = document.getElementById("home").value;
+    var away = document.getElementById("away").value;
+    if(home > away){
+        document.getElementById("winner").innerHTML = "HOME TEAM WINS";
+        console.log("Home Team Wins");
+    }
+    if(away > home){
+        document.getElementById("winner").innerHTML = "AWAY TEAM WINS";
+        console.log("Away Team Wins");
+    }
+    if(home == away){
+        document.getElementById("winner").innerHTML = "MATCH DRAWN";
+        console.log("Match Draws");
+    }
+}
+
+function load(){
+    alert("Welcome to the online portal");
+    console.log("Page loaded in the Browser");
+}
+
+function unload(){
+    alert("Good Bye");
+    console.log("User exited the browser window");
+}
+
+</script>
+<body onload="load()" onunload="unload()">
+    <h1>Welcome to Premier League soccer</h1>
+    <a href="https://www.google.com/search?q=premier+league&oq=prem+ier&aqs=chrome.1.69i57j0l5.2081j1j7&sourceid=chrome&ie=UTF-8#sie=lg;/g/11f60x_ln9;2;/m/02_tc;mt;fp;1;;">Check next league match</a>
+    <br><br>
+    <a onmouseover="alert('Glory Glory Man United !!');console.log('User hovered the mouse over the onmouseover() event');"> Hover your mouse here for an event </a>
+    <form>
+        <br><br>
+        <input type="button"value="Player committed a foul" onclick="console.log('User Clicked the foul button'); 
+        alert('Player received a warning & a YELLOW card. Click OK if player has committed a serious foul');
+        console.log('User click the OK button in first alert so the player receives a red card');" />
+    </form>
+    <br>
+    <div>
+        <h5>Enter Home Team Score</h5>
+        <input id="home" type="text" placeholder="Home Team Score" />
+        <h5>Enter Away Team Score</h5>
+        <input id="away" type="text" placeholder="Away Team Score" />
+        <h5>Who wins the match?</h5>
+        <input id="result" type="button" value="Click to check" onclick="testScore()" />
+        <h1 id="winner" style="color:red;"></h1> 
+    </div>
+</body>
+</html>
