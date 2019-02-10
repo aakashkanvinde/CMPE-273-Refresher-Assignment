@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Functions</title>
+	<script type="text/javascript">
+	function speedConverter(){
+		console.log("speedconverter() function executes on  clicking 'Convert to kps' button");
+		var mps = document.getElementById("mps").value;
+		console.log("The mps value entered by user: "+mps);
+		var kps = mps/1000;
+		console.log(mps+" meter per second is equal to "+kps+" kilometer per second");
+		document.getElementById("speedinkps").innerHTML = kps + " kilometers per second";
+	}
+
+	</script>
+</head>
+<body>
+	<h2>SPEED UNITS CONVERTER</h2>
+	<h4>Enter value in meter per second</h4>
+	<div>
+		<input type="number" id="mps"/>
+		<input type="button" id="mpstokps" value="Convert to kps" onclick="speedConverter()"/> 
+		&nbsp &nbsp
+		<span id="speedinkps"></span>
+	</div>
+
+</body>
+</html>
