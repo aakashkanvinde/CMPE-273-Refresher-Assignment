@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript - Type Conversion</title>
+</head>
+<script type="text/javascript">
+var statement = "Hello, my name is Aakash Kanvinde";
+var age = 10;
+var decision = true;
+var gender = null;
+var height;
+var date =  new Date();
+var person = function person(){
+    console.log("Hello I am a Person");
+}
+
+console.log("\n***** Javascript - Type Conversions *****\n");
+
+console.log("\n"+statement+" = type: "+typeof(statement)+"\n");
+document.write("Type of Statement Variable ("+statement+") is: "+typeof(statement) +"<br><br>");
+
+console.log("\n"+age+" = type: "+typeof(age)+"\n");
+document.write("Type of Age Variable ("+age+") is: " +typeof(age) +"<br><br>");
+
+console.log("\n"+decision+" = type: "+typeof(decision)+"\n");
+document.write("Type of Decision Variable ("+decision+") is: "+typeof(decision) +"<br><br>");
+
+document.write("Type of height Variable is: ");
+document.write(typeof(height));
+document.write("<br><br>");
+console.log("\n"+height+" = type: ");
+console.log(typeof(height));
+console.log("\n");
+
+
+console.log("\n"+gender+" = type: "+typeof(gender)+"\n");
+document.write("Type of Gender Variable ("+gender+") is: "+typeof(gender) +"<br><br>");
+
+console.log("\n"+person+" = type: "+typeof(person)+"\n");
+document.write("Type of Person Variable ("+person+") is: "+typeof(person) +"<br><br>");
+
+console.log("\nDate ("+date.getDate()+") = type: "+typeof(date)+"\n");
+document.write("Type of Date Variable ("+date.getDate()+") is: "+typeof(date) +"<br><br>");
+
+
+console.log("/////////////////////////////////////////////");
+document.write("*******************************");
+
+console.log("\n Decision Type now changed to "+typeof(String(decision))+"("+ String(decision)+")\n");
+document.write("<br><br>Type of Decision Variable ("+decision+") now changed to: "+typeof(String(decision))+"("+String(decision)+") <br>");
+
+console.log("\n Decision Type now changed to "+typeof(Number(decision))+"("+ Number(decision)+")\n");
+document.write("<br>Type of Decision Variable ("+decision+") now changed to: "+typeof(Number(decision))+"("+Number(decision)+") <br>");
+
+console.log("\n Age Type now changed to "+typeof(String(age))+"("+ String(age)+")\n");
+document.write("<br>Type of Age Variable ("+age+") now changed to: "+typeof(String(age))+"("+String(age)+") <br>");
+
+console.log("\n Gender Type now changed to "+typeof(("Male "+gender))+"("+ ("'Male "+gender)+"')\n");
+document.write("<br>Type of Gender Variable ("+gender+") now changed to: "+typeof(("Male "+gender))+"("+("'Male "+gender)+"') <br>");
+
+console.log("\n Date Type now changed to "+typeof((date.toString()))+"("+ (date.toString())+")\n");
+document.write("<br>Type of Date Variable ("+date.getDate()+") now changed to: "+typeof((date.toString()))+"("+(date.toString())+") <br>");
+
+console.log("\n Date Type now changed to "+typeof(Number(date))+"("+ (Number(date))+")\n");
+document.write("<br>Type of Date Variable ("+Number(date)+") now changed to: "+typeof(Number(date))+"("+Number(date)+") <br>");
+
+
+</script>
+<body>
+    
+</body>
+</html>
